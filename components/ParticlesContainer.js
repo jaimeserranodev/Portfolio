@@ -1,5 +1,5 @@
-import { Particles } from 'react-tsparticles';
-import { loadFull } from 'tsparticles';
+import {Particles} from 'react-tsparticles';
+import {loadFull} from 'tsparticles';
 import React, { useCallback } from 'react';
 
 const ParticlesContainer = () => {
@@ -8,7 +8,8 @@ const ParticlesContainer = () => {
     await loadFull(engine);
   }, []);
 
-  const particlesLoaded = useCallback(async () => {}, []);
+  const particlesLoaded = useCallback(async () => {
+  }, []);
 
   return (
     <Particles
@@ -17,7 +18,7 @@ const ParticlesContainer = () => {
       init={particlesInit} 
       loaded={particlesLoaded}
       options={{
-        fullScreen: { enable: false},
+        fullScreen: {enable: false},
         background: {
           color: {
             value: '',
