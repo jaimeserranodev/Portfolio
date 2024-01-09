@@ -5,15 +5,19 @@ import React, { useCallback } from 'react';
 const ParticlesContainer = () => {
   //init
   const particlesInit = useCallback(async (engine) => {
+    console.log("Particles Initialized");
     await loadFull(engine);
   }, []);
-
+  
   const particlesLoaded = useCallback(async () => {
+    console.log("Particles Loaded");
   }, []);
+
 
   return (
     <Particles
-      className='w-full h-full absolute translate-z-0'
+      className=''
+      style={{ width: '100vw', height: '100vh', position: 'absolute', top: 0, left: 0 }}
       id='tsparticles' 
       init={particlesInit} 
       loaded={particlesLoaded}
