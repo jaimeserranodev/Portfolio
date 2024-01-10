@@ -1,5 +1,4 @@
 // components 
-import SerciceSlider from '../../components/ServiceSlider';
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 
