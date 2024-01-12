@@ -24,8 +24,8 @@ const Home = () => {
           initial="hidden" 
           animate="show"
           exit="hidden"
-          className="h1">Transforming Ideas <br /> Into{' '}
-          <span className="text-accent">Digital Reality</span>
+          className="h1">Welcome to <br />My {' '}
+          <span className="text-accent">Digital World</span>
         </motion.h1>
         {/* subtitle */}
         <motion.p 
@@ -34,7 +34,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-        "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
+        👋 Hello, I'm Jaime, a passionate Front-End Developer committed to turning innovative ideas into impactful digital realities. My journey in the software development world is more than a career; it's an ongoing adventure in pursuit of creative and efficient solutions.
         </motion.p>
         {/* btn */}
         <div className="flex justify-center xl:hidden relative">
@@ -45,7 +45,7 @@ const Home = () => {
           initial="hidden" 
           animate="show"
           exit="hidden"
-          className="hidden xl:flex"
+          className="hidden xl:flex "
           > 
           <ProjectsBtn />
         </motion.div>

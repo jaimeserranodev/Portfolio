@@ -6,9 +6,10 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
   FaShopify,
+  FaPhp,
+  FaNode,
 } from "react-icons/fa";
 
 import {
@@ -25,15 +26,21 @@ const aboutData = [
     title: 'skills',
     info: [
       {
-        title: 'Web Development',
+        title: 'Front-End Developer',
         icons: [
           <FaHtml5 />,
           <FaCss3 />,
           <FaJs />,
           <FaReact />,
           <SiNextdotjs />,
-          <SiFramer />,
           <FaShopify />,
+        ],
+      },
+      {
+        title: 'Back-End Developer',
+        icons: [
+          <FaPhp />,
+          <FaNode />,
         ],
       },
       {
@@ -43,49 +50,19 @@ const aboutData = [
     ],
   },
   {
-    title: 'awards',
-    info: [
-      {
-        title: 'Webby Awards - Honoree',
-        stage: '2011 - 2012',
-      },
-      {
-        title: 'Adobe Design Achievement Awards - Finalist',
-        stage: '2009 - 2010',
-      },
-    ],
-  },
-  {
     title: 'experience',
     info: [
       {
-        title: 'UX/UI Designer - XYZ Company',
-        stage: '2012 - 2023',
+        title: 'Bootcamp FullStack - Pixel',
+        stage: '2022',
       },
       {
-        title: 'Web Developer - ABC Agency',
-        stage: '2010 - 2012',
+        title: 'Training FullStack - Oxygen Academy',
+        stage: '2023',
       },
       {
-        title: 'Intern - DEF Corporation',
-        stage: '2008 - 2010',
-      },
-    ],
-  },
-  {
-    title: 'credentials',
-    info: [
-      {
-        title: 'Web Development - ABC University, LA, CA',
-        stage: '2011',
-      },
-      {
-        title: 'Computer Science Diploma - AV Technical Institute',
-        stage: '2009',
-      },
-      {
-        title: 'Certified Graphic Designer - ABC Institute, Los Angeles, CA',
-        stage: '2006',
+        title: 'Front End Developer - Velites',
+        stage: '2023',
       },
     ],
   },
@@ -136,7 +113,7 @@ const About = () => {
             animate= 'show'
             exit= 'hidden'
             className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
-            2 years ago, I began freelancing as a developer. Since them, I've done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.
+              Two years into my programming journey, I’ve mastered the MERN stack through a focused full-stack bootcamp. Equipped with hands-on experience and a project portfolio, I am actively seeking employment where I can contribute to innovative tech solutions and grow professionally.
           </motion.p>
           {/* counters */}
           <motion.div 
@@ -168,12 +145,7 @@ const About = () => {
               <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'>Finished proyects</div>
               </div>
               {/* awards */}
-              <div className='relative flex-1'>
-                <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
-                  <CountUp start={0}  end={8} duration={5} /> +
-                </div>
-              <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'> Winning awards</div>
-              </div>
+              
             </div>
           </motion.div>
         </div>
@@ -200,7 +172,6 @@ const About = () => {
             );
           })}
         </div>
-        
         <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
           {aboutData[index].info.map((item, itemIndex)=>{
             return (
@@ -220,6 +191,21 @@ const About = () => {
             );
           })}
         </div>
+        <motion.div 
+          variants={fadeIn('left', 0.4)}
+          initial='hidden'
+          animate='show'
+          exit='hidden'
+          className=' m-8'
+        >
+          <a 
+            href='/CV-Jaime.pdf' // Asegúrate de que la ruta coincida con la ubicación de tu archivo CV
+            download
+            className='bg-accent hover:bg-accent-hover text-white font-bold py-2 px-4 rounded'
+          >
+            Download CV
+          </a>
+        </motion.div>
       </motion.div>
     </div>
     </div>
