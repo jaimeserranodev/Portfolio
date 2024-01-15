@@ -14,7 +14,6 @@ import {
 
 import {
   SiNextdotjs,
-  SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
 } from "react-icons/si";
@@ -183,15 +182,13 @@ const About = () => {
               <div className='flex gap-x-4'>
                 {/* icons */}
               {item.icons?.map((icon, iconIndex) => {
-                const iconKey =`icon-${itemIndex}-${iconIndex}`;
                 return (
-                <div key={iconKey} className='text-2xl text-white'>
+                  <div key={iconIndex} className='text-2xl text-white'>
                   {icon}
                 </div>
                 );
               })}
               </div>
-              
             </div>
             );
           })}
