@@ -32,7 +32,7 @@ const Work = () => {
               exit='hidden'   
               className='mb-4 max-w-[400px] mx-auto lg:mx-0'
               >
-                2 years ago, I began freelancing as a developer. Since them, I've done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.
+                2 years ago, I began freelancing as a developer. Since them, I&apos;ve done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.
             </motion.p>
           </div>
 

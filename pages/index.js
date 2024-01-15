@@ -1,5 +1,3 @@
-// next image
-import Image from "next/image";
 
 // components
 import ParticlesContainer from '../components/ParticlesContainer';
@@ -34,7 +32,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-        👋 Hello, I'm Jaime, a passionate Front-End Developer committed to turning innovative ideas into impactful digital realities. My journey in the software development world is more than a career; it's an ongoing adventure in pursuit of creative and efficient solutions.
+        Hello, I&apos;m Jaime, a passionate Front-End Developer committed to turning innovative ideas into impactful digital realities. My journey in the software development world is more than a career; it's an ongoing adventure in pursuit of creative and efficient solutions.
         </motion.p>
         {/* btn */}
         <div className="flex justify-center xl:hidden relative">
