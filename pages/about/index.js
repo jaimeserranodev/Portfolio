@@ -35,7 +35,7 @@ const aboutData = [
       {
         title: 'UI/UX Design',
       },
-    ],
+    ]
   },
   {
     title: 'experience',
@@ -100,7 +100,7 @@ const About = () => {
             initial='hidden'
             animate= 'show'
             exit= 'hidden'
-            className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
+            className='hidden md:block max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
               Two years into my programming journey, I’ve mastered the MERN stack through a focused full-stack bootcamp. Equipped with hands-on experience and a project portfolio, I am actively seeking employment where I can contribute to innovative tech solutions and grow professionally.
           </motion.p>
           {/* counters */}

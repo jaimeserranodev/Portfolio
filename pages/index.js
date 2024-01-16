@@ -32,10 +32,10 @@ const Home = () => {
           animate="show"
           exit="hidden"
           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-        Hello, I&apos;m Jaime, a passionate Front-End Developer committed to turning innovative ideas into impactful digital realities. My journey in the software development world is more than a career; it&apos;s an ongoing adventure in pursuit of creative and efficient solutions.
+        Hi, I&apos;m Jaime, a dedicated Front-End Developer focused on transforming creative ideas into effective digital solutions. My career in software development is a continuous quest for innovative and efficient outcomes.
         </motion.p>
         {/* btn */}
-        <div className="flex justify-center xl:hidden relative">
+        <div className="flex justify-center xl:hidden relative mt-4 xl:mb-0 z-10">
           <ProjectsBtn />
         </div>
         <motion.div 
@@ -43,7 +43,7 @@ const Home = () => {
           initial="hidden" 
           animate="show"
           exit="hidden"
-          className="hidden xl:flex "
+          className="hidden xl:flex z-10"
           > 
           <ProjectsBtn />
         </motion.div>
