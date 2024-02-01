@@ -8,7 +8,7 @@ const workSlides = {
         {
           title: 'title',
           path: '/1.svg',
-          url: 'https://jaimeserranodev.github.io/Hotel-Miranda/Pages/Home/home.html',
+          url: 'https://jaimeserranodev.github.io/OXYGENShop/',
         },
         {
           title: 'title',
@@ -18,7 +18,7 @@ const workSlides = {
         {
           title: 'title',
           path: '/3.svg',
-          url: 'https://jaimeserranodev.github.io/Hotel-Miranda/Pages/Home/home.html',
+          url: 'http://jaimeserranodev.github.io/reactPhotos/',
         },
         {
           title: 'title',
