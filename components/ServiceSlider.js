@@ -25,28 +25,28 @@ import { FreeMode, Pagination} from 'swiper';
 const serviceData = [
   {
     icon: <RxCrop />,
-    title: 'Branding',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    title: 'Front-End',
+    description: 'Developing the user-facing part of websites with HTML, CSS, JS.',
+  },
+  {
+    icon: <RxReader />,
+    title: 'Back-End',
+    description: 'Server, database, and application logic behind the scenes.',
+  },
+  {
+    icon: <RxDesktop />,
+    title: 'Git Control',
+    description: 'Manage versioning and collaboration in source code with Git.',
   },
   {
     icon: <RxPencil2 />,
     title: 'Design',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxDesktop />,
-    title: 'Development',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-  },
-  {
-    icon: <RxReader />,
-    title: 'Copywriting',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Crafting visual aesthetics and user interfaces for digital products.',
   },
   {
     icon: <RxRocket />,
     title: 'SEO',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+    description: 'Optimize website visibility and ranking in search engine results.',
   },
 ];
 
