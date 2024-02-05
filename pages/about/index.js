@@ -10,6 +10,7 @@ import {
   FaShopify,
   FaPhp,
   FaNode,
+  FaGithub,
 } from "react-icons/fa";
 
 import {
@@ -26,14 +27,26 @@ const aboutData = [
     info: [
       {
         title: 'Front-End Developer',
-        
+        icons: [FaHtml5,FaCss3,FaJs,
+          FaReact,
+          ,
+          FaShopify,
+          ],
       },
       {
         title: 'Back-End Developer',
-        
+        icons: [
+          FaPhp,
+          FaNode,
+          FaGithub,
+        ]
       },
       {
         title: 'UI/UX Design',
+        icons: [
+          FaFigma,
+          SiAdobexd,
+        ]
       },
     ]
   },
@@ -70,7 +83,19 @@ import { fadeIn } from '../../variants';
 import CountUp from 'react-countup';
 
 const About = () => {
+
   const [index, setIndex] = useState(0);
+  
+  const renderIcons = (icons) => {
+    return icons.map((Icon, index) => {
+      // Asegúrate de que Icon sea un componente válido antes de renderizarlo
+      if (typeof Icon === 'function' || typeof Icon === 'object') {
+        return <Icon key={index} className="text-2xl text-white" />;
+      }
+      return null; // En caso de que no sea un componente válido, no renderizar nada (o manejar como se desee)
+    });
+  };
+
   return (
   <div className='h-full bg-primary/30 py-32 text-center xl:text-left'>
     <Circles />
@@ -93,7 +118,7 @@ const About = () => {
             exit= 'hidden' 
             className='h2'
             >
-            Captivating <span className='text-accent'>stories</span> birth magnificent designs.
+            This is my <span className='text-accent'>technical</span>  stack
           </motion.h2>
           <motion.p 
             variants={fadeIn('right', 0.2)}
@@ -119,12 +144,12 @@ const About = () => {
               <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'> Years of experience</div>
               </div>
               {/* clients */}
-              <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-8 after:right-0'>
+              {/*<div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-8 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
                   <CountUp start={0}  end={250} duration={5} /> +
                 </div>
               <div className='text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]'> Satisfaced client</div>
-              </div>
+              </div>*/}
               {/* proyects */}
               <div className='relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-8 after:right-0'>
                 <div className='text-2xl xl:text-4xl font-extrabold text-accent mb-2'>
@@ -156,19 +181,25 @@ const About = () => {
             onClick={()=> setIndex(itemIndex)}
               >
               {item.title}
+              
               </div>
             );
           })}
         </div>
         <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
-          {aboutData[index].info.map((item, itemIndex)=>{
+          {aboutData[index].info.map((item, itemIndex) => {
             return (
-            <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
+            <div key={itemIndex} 
+              className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
               {/* title */}
               <div className='font-light mb-2 md:mb-0'>{item.title}</div>
               <div className='hidden md:flex'>-</div>
               <div>{item.stage}</div>
-              
+              <div className='flex gap-x-4'> 
+              {/* Icons */}
+              {item.icons && renderIcons(item.icons)}
+
+              </div>
             </div>
             );
           })}

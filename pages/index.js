@@ -22,8 +22,8 @@ const Home = () => {
           initial="hidden" 
           animate="show"
           exit="hidden"
-          className="h1">Welcome to <br />My {' '}
-          <span className="text-accent">Digital World</span>
+          className="h1">I&apos;m   {' '}
+          <span className="text-accent">FullStack</span><br />Developer
         </motion.h1>
         {/* subtitle */}
         <motion.p 
@@ -32,7 +32,7 @@ const Home = () => {
           animate="show"
           exit="hidden"
           className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
-        Hi, I&apos;m Jaime, a dedicated Front-End Developer focused on transforming creative ideas into effective digital solutions. My career in software development is a continuous quest for innovative and efficient outcomes.
+        Hi, I&apos;m Jaime, a dedicated FullStack Developer focused on transforming creative ideas into effective digital solutions. My career in software development is a continuous quest for innovative and efficient outcomes.
         </motion.p>
         {/* btn */}
         <div className="flex justify-center xl:hidden relative mt-4 xl:mb-0 z-10">
