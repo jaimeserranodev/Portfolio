@@ -1,5 +1,6 @@
 // components 
 import Circles from '/components/Circles';
+import Link from 'next/link';
 
 //icons
 import {BsArrowRight} from 'react-icons/bs';
@@ -71,7 +72,7 @@ const Contact = () => {
             animate="show"
             exit="hidden"
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 xl:text-center">
-              Welcome to my contact page! Here, you can easily reach out to me via email, connect with me on LinkedIn, or download my CV for a comprehensive overview of my skills and experiences. Let's make your next project a success together.
+              Welcome to my contact page! Here, you can easily reach out to me via email, connect with me on LinkedIn, or download my CV for a comprehensive overview of my skills and experiences. Let&apos;s make your next project a success together.
           </motion.p>
           <div className='flex gap-x-4 xl:gapx8 mx-auto xl:mx-0 mb-4'>
           {aboutData.map((item, itemIndex) =>{
