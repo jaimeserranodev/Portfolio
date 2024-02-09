@@ -44,7 +44,7 @@ const Contact = () => {
   const [index, setIndex] = useState(0);
 
   return (
-    <div className='h-full bg-primary/30'>
+    <div className='h-full bg-primary dark:bg-black'>
       <div className='container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full'>
         
           {/* text  & form*/}
@@ -55,7 +55,7 @@ const Contact = () => {
             exit='hidden'
             variants={fadeIn('up', 0.2)}
 
-            className='h2 text-center mb-12'>
+            className='h2 text-center mb-12 text-cyan-800 dark:text-white'>
             Let&apos;s <span className='text-accent'>connect.</span>
           </motion.h2>
           {/* SUBTITLE */}
@@ -71,7 +71,7 @@ const Contact = () => {
             initial="hidden" 
             animate="show"
             exit="hidden"
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 xl:text-center">
+            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 xl:text-center text-slate-800 dark:text-white">
               Welcome to my contact page! Here, you can easily reach out to me via email, connect with me on LinkedIn, or download my CV for a comprehensive overview of my skills and experiences. Let&apos;s make your next project a success together.
           </motion.p>
           <div className='flex gap-x-4 xl:gapx8 mx-auto xl:mx-0 mb-4'>
@@ -81,8 +81,8 @@ const Contact = () => {
               key={itemIndex} 
               className={`${
                 index === itemIndex && 
-                'text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300'
-            } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-white after:absolute after:-bottom-1   after:left-0`}
+                'text-black dark:text-white after:w-[100%] after:bg-accent after:transition-all after:duration-300'
+            } cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px] after:bg-accent after:absolute after:-bottom-1   after:left-0`}
             onClick={()=> setIndex(itemIndex)}
               >
               {item.title}
@@ -103,21 +103,21 @@ const Contact = () => {
           const IconComponent = item.icons; // Asigna el componente del ícono a una variable
           return (
               <div key={itemIndex} 
-                className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
+                className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-black dark:text-white'>
                 {/* title */}
-                <div className='font-light mb-2 md:mb-0'>{item.title}</div>
+                <div className='font-light mb-2 md:mb-0 text-black dark:text-white'>{item.title}</div>
                 <div className='hidden md:flex'>-</div>
-                <div className='flex gap-x-4'> 
+                <div className='flex gap-x-4 text-black dark:text-white'> 
                   {/* Renderiza el icono como un componente si existe, envuelto en un enlace si tiene una URL */}
                   {item.email && (
-          <span style={{ color: 'white' }}>{item.email}</span> // Aplica estilos en línea para el email
+          <span >{item.email}</span> // Aplica estilos en línea para el email
         )}
                   {IconComponent && item.url ? (
                     <a href={item.url} target="_blank" rel="noopener noreferrer">
-                      <IconComponent className="text-2xl" style={{ color: 'white' }} />
+                      <IconComponent className="text-2xl text-black dark:text-white"  />
                     </a>
                   ) : IconComponent ? (
-                    <IconComponent className="text-2xl" style={{ color: 'white' }} />
+                    <IconComponent className="text-2xl text-black dark:text-white"  />
                   ) : null}
                 </div>
               </div>
@@ -138,7 +138,7 @@ const Contact = () => {
           <a 
             href='/CV-Jaime.pdf' // Asegúrate de que la ruta coincida con la ubicación de tu archivo CV
             download
-            className='bg-accent hover:bg-accent-hover text-white font-bold py-2 px-4 rounded'
+            className='bg-cyan-800 hover:bg-accent-hover text-white font-bold py-2 px-4 rounded'
           >
             Download CV
           </a>

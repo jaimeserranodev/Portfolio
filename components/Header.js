@@ -21,6 +21,7 @@ const Header = () => {
             height={48}
             alt=""
             priority={true}
+            className="brightness-0 dark:filter-none"
             />
           </Link>
           {/* socials */}

@@ -12,9 +12,9 @@ import { fadeIn } from '../variants';
 
 const Home = () => {
   return (
-  <div className="bg-primary/60 h-full">
+  <div className="bg-primary h-full">
     {/* text */}
-    <div className="w-full h-full bg-grandient-to-r from-primary/10 via-black/30 ">
+    <div className="w-full h-full bg-grandient-to-r from-primary/10 via-black/30 dark:bg-black ">
       <div className="text-center flex flex-col justify-center xl:pt-40 xl:text-left h-full container mx-auto">
         {/* title */}
         <motion.h1 
@@ -22,8 +22,8 @@ const Home = () => {
           initial="hidden" 
           animate="show"
           exit="hidden"
-          className="h1">I&apos;m   {' '}
-          <span className="text-accent">FullStack</span><br />Developer
+          className="h1 text-cyan-800 dark:text-white">I&apos;m   {' '}
+          <span className="text-accent dark:text-cyan-300">FullStack</span><br />Developer
         </motion.h1>
         {/* subtitle */}
         <motion.p 
@@ -31,7 +31,7 @@ const Home = () => {
           initial="hidden" 
           animate="show"
           exit="hidden"
-          className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+          className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 text-slate-800 dark:text-white">
         Hi, I&apos;m Jaime, a dedicated FullStack Developer focused on transforming creative ideas into effective digital solutions. My career in software development is a continuous quest for innovative and efficient outcomes.
         </motion.p>
         {/* btn */}

@@ -8,6 +8,7 @@ module.exports = {
     // Or if using `src` directory:
     './src/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     container: {
       padding: {
@@ -22,15 +23,12 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#131424',
+        primary: '#eff6ff',
         secondary: '#393A47',
-        accent: '#F13024',
+        accent: '#67e8f9',
       },
       backgroundImage: {
-        explosion: 'url("/bg-explosion.png")',
-        circles: 'url("/bg-circles.png")',
-        circleStar: 'url("/circle-star.svg")',
-        site: 'url("/site-bg.svg")',
+        
       },
       animation: {
         'spin-slow': 'spin 6s linear infinite',

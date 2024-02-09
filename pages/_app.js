@@ -12,8 +12,9 @@ import { AnimatePresence, motion } from 'framer-motion';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+  
   return (
-  <Layout>
+  <Layout class="dark">
     <AnimatePresence mode='wait'>
       <motion.div key={router.route} className='h-full'>
         <Transition />

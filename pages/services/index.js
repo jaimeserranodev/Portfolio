@@ -9,7 +9,7 @@ import ServiceSlider from '../../components/ServiceSlider';
 
 const Services = () => {
   return (
-    <div className='h-full bg-primary/30 py-36 flex items-center'>
+    <div className='h-full bg-primary dark:bg-black  py-36 flex items-center'>
       <Circles />
       <div className='container mx-auto'>
         <div className='flex flex-col xl:flex-row gap-x-8'>
@@ -20,7 +20,7 @@ const Services = () => {
               initial='hidden' 
               animate='show' 
               exit='hidden' 
-              className='h2 xl:mt-8'
+              className='h2 xl:mt-8 text-cyan-800 dark:text-white'
               >
                 My services <span className='text-accent'>.</span>
             </motion.h2>
@@ -29,7 +29,7 @@ const Services = () => {
               initial='hidden' 
               animate='show' 
               exit='hidden'   
-              className='mb-4 max-w-[400px] mx-auto lg:mx-0'
+              className='mb-4 max-w-[400px] mx-auto lg:mx-0 text-cyan-800 dark:text-white'
               >
                 2 years ago, I began freelancing as a developer. Since them, I&apos;ve done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.
             </motion.p>
@@ -41,7 +41,7 @@ const Services = () => {
             initial='hidden' 
             animate='show' 
             exit='hidden' 
-            className='w-full xl:max-w-[65%]'>
+            className='w-full xl:max-w-[65%] '>
             
             <ServiceSlider />
           </motion.div>
