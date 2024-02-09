@@ -2,6 +2,7 @@
 import WorkSlider from '../../components/WorkSlider';
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
+import ParticlesContainer from '../../components/ParticlesContainer';
 
 //framer motion
 import {motion} from 'framer-motion';
@@ -35,6 +36,7 @@ const Work = () => {
                 2 years ago, I began freelancing as a developer. Since them, I&apos;ve done remote work for agencies, consulted for startups, and collaborated on digital products for business and consumer use.
             </motion.p>
           </div>
+          <ParticlesContainer />
 
           {/* slider */}
           <motion.div 

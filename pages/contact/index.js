@@ -9,6 +9,7 @@ import {
 } from 'react-icons/ri'
 
 import React, { useState } from 'react';
+import ParticlesContainer from '../../components/ParticlesContainer';
 
 
 // framer
@@ -126,7 +127,8 @@ const Contact = () => {
         </div>
         </motion.div>
 
-          
+        <ParticlesContainer />
+
           {/* form */}
           <motion.div 
           variants={fadeIn('left', 0.4)}

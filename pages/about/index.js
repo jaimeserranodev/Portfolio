@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import ParticlesContainer from '../../components/ParticlesContainer';
 
 // icons
 import {
@@ -161,6 +162,9 @@ const About = () => {
               
             </div>
           </motion.div>
+          <ParticlesContainer />
+
+          
         </div>
         {/* info */}
         <motion.div 
