@@ -8,7 +8,7 @@ const workSlides = {
         {
           title: 'title',
           path: '/1.svg',
-          url: 'https://jaimeserranodev.github.io/OXYGENShop/',
+          url: 'https://jaimeserranodev.github.io/OxygenShopEcomerce/',
         },
         {
           title: 'title',
@@ -27,26 +27,27 @@ const workSlides = {
         },
       ],
     },
+    
     {
       images: [
         {
           title: 'title',
+          path: '/1.svg',
+          url: 'https://jaimeserranodev.github.io/OxygenShopEcomerce/',
+        },
+        {
+          title: 'title',
+          path: '/2.svg',
+          url: 'https://jaimeserranodev.github.io/Hotel-Miranda/Pages/Home/home.html',
+        },
+        {
+          title: 'title',
+          path: '/3.svg',
+          url: 'http://jaimeserranodev.github.io/reactPhotos/',
+        },
+        {
+          title: 'title',
           path: '/thumb4.jpg',
-          url: 'https://jaimeserranodev.github.io/Hotel-Miranda/Pages/Home/home.html',
-        },
-        {
-          title: 'title',
-          path: '/thumb1.jpg',
-          url: 'https://jaimeserranodev.github.io/Hotel-Miranda/Pages/Home/home.html',
-        },
-        {
-          title: 'title',
-          path: '/thumb2.jpg',
-          url: 'https://jaimeserranodev.github.io/Hotel-Miranda/Pages/Home/home.html',
-        },
-        {
-          title: 'title',
-          path: '/thumb3.jpg',
           url: 'https://jaimeserranodev.github.io/Hotel-Miranda/Pages/Home/home.html',
         },
       ],
